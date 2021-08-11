@@ -14,7 +14,6 @@ public class Queue
 	//Create A New Queue
 	public Queue()
 	{
-		//Do something?
 		this.front = null;
 		this.back = null;
 	}
@@ -64,15 +63,6 @@ public class Queue
 		}
 		this.back.next = nextNode;
 		this.back = nextNode;
-//		nextNode.next = null;
-//		if (this.front == null) {
-//			this.front = nextNode;
-//			this.back =  nextNode;
-//		}else {
-//			this.back.next = nextNode;
-//			this.back = nextNode;
-//		}
-//		return;
 	}
 
 	//Remove an item from the front of the queue
@@ -90,13 +80,5 @@ public class Queue
 			this.back = null;
 		}
 		return temp.value;
-//		if (this.front == null) {
-//			return 0;
-//		}
-//		this.front = this.front.next;
-//		if (this.front == null) {
-//			this.back = null;
-//		}
-//		return -1;
 	}
 }
